@@ -1,0 +1,6 @@
+import java.util.Random;
+
+Random rand = new Random(50);
+int number = rand.nextInt(51);
+
+print(number);

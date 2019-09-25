@@ -1,0 +1,5 @@
+runtime: java
+api_version: 1
+env: standard
+entrypoint: gunicorn -b  :$PORT numbers.java
+threadsafe: false

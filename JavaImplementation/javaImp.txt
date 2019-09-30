@@ -1,6 +1,6 @@
 import java.util.Random;
 
-Random rand = new Random(50);
-int number = rand.nextInt(51);
+Random rand = new Random();
+int number = rand.nextInt(1000000);
 
 print(number);

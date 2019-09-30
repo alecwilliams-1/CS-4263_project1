@@ -17,4 +17,4 @@ Step6: Now save your application. You are now ready to deploy your application.
        box, click Deploy.
        The status of the deployment appears in the Eclipse Console. Once the deployment is completed, a browser 
        window opens and displays the output of your Servlet.
-       YOU APPLICATION IS NOW RUNNING ON GOOGLE CLOUD!!!
+       YOU APPLICATION IS NOW RUNNING ON GOOGLE CLOUD!!!!!

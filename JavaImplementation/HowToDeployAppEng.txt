@@ -1,0 +1,20 @@
+ Before you start, you need to install Eclipse IDE for Java EE Developers
+-------------------------------------------------------------------------
+Step1: Go to GCP and create a new App Engine project
+Step2: Configure your Eclipse IDE. What you need to do is to install Google Cloud Tools for Eclipse from the Eclipse Marketplace. 
+       After completing the installation, go ahead and restart your Eclipse IDE.
+Step3: Now go to Eclipse IDE and you should be abble to create an App Engine Java Project. For this assignment, I have created a
+       Google App Engine Standard Java Project.
+       Click File>New>Other>Google App Engine Standard Java Project
+       Enter a name for your project and leave the other fields as their defaults.
+       Now click >Finish
+       You have created your project!!!
+Step4: Go back to GCP and copy the project id of the project where you want your application to be deploy into.
+Step5: Go back to eclipse, go to appengine-web.xml file and paste <application>?</application>
+       ? = your project id.
+Step6: Now save your application. You are now ready to deploy your application.
+       Right click the project in the Package Explorer and select Deploy to App Engine Standard. In the account 
+       box, click Deploy.
+       The status of the deployment appears in the Eclipse Console. Once the deployment is completed, a browser 
+       window opens and displays the output of your Servlet.
+       YOU APPLICATION IS NOW RUNNING ON GOOGLE CLOUD!!!!!

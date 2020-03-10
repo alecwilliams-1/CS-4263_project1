@@ -1,2 +1,4 @@
+pyodbc==4.0.27
+pandas==0.25.1
 Flask==0.11.1
 gunicorn==19.6.0

@@ -1,13 +1,14 @@
 import pyodbc
 import pandas as pd
 from pandas import DataFrame
+import matplotlib.pyplot as plt
 server = 'tcp:sp2020.database.windows.net'
 database = 'SP2020'
 username = 'se2sql'
 password = 'SoftwareEngineering2'
 
 #Gets full rows of candidates
-cnxn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+cnxn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+password)
 cursor = cnxn.cursor()
 sql = "SELECT * FROM dbo.cands"
 # cursor.execute(sql)
@@ -29,5 +30,8 @@ for row2 in cursor2:
 '''
 df = pd.read_sql(sql, cnxn)
 # Parse away outliers to get only five choice of party affiliation
-df = df[(df.Party == 'R') | (df.Party == 'D')| (df.Party == '3') | (df.Party == 'L') | (df.Party == 'U')]
-print(df)
+df = df[(df.Party == 'R') | (df.Party == 'D') | (df.Party == '3') | (df.Party == 'L') | (df.Party == 'U')]
+# df.plot(x='Party', y='Cycle', kind='bar')
+df.groupby(['Party']).count().plot(kind='bar')
+plt.show()
+# print(df)

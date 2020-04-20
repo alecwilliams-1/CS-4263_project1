@@ -1,4 +1,4 @@
-Implementation
+# Implementation
 
 Our project is a Power Bi representation of the SQL data in our Azure server. We have created graphical interpretations of this
 data to allow the user to easily find information. Some of these charts allow you to search through companies to see what political 
